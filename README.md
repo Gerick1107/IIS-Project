@@ -2,7 +2,13 @@
 
 ## 1. Description / Objective
 
-This project aims to build and train a Convolutional Neural Network (CNN) model to classify images into predefined categories. The model is trained on a sample dataset and demonstrates the basic pipeline for image classification tasks using PyTorch.
+This project implements an intelligent multilingual receptionist chatbot capable of handling appointment scheduling, rescheduling, and cancellation. Key features include:
+Multilingual support (English, Hindi, French, Spanish)
+Both text and voice input modes
+Natural language processing for request understanding
+Database integration for appointment management
+PDF report generation
+Secure data handling with encryption
 
 ---
 

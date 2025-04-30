@@ -23,7 +23,8 @@ pip install -r requirements.txt
 Alternatively, manually install the libraries:
 
 ```bash
-pip install torch torchvision numpy pandas matplotlib
+!pip install spacy openai-whisper torchaudio pydub soundfile gTTS ipython langdetect deep-translator fpdf
+!python -m spacy download en_core_web_sm
 ```
 
 ---
@@ -34,15 +35,15 @@ Copy and paste the following commands into your terminal:
 
 ```bash
 # Step 1: Clone the repository
-git clone https://github.com/yourusername/image-classification-cnn.git
+git clone https://github.com/Gerick1107/IIS-Project.git
 
 # Step 2: Navigate into the project directory
-cd image-classification-cnn
+cd IIS-Project
 
 # Step 3: Install dependencies
 pip install -r requirements.txt
 
-# Step 4: Run the training script
+# Step 4: Run the chatbot
 python main.py
 ```
 
@@ -51,20 +52,27 @@ python main.py
 ## 4. File Structure
 
 ```
-image-classification-cnn/
+IIS-Project/
 │
 ├── README.md                # Project overview and setup instructions
 ├── requirements.txt         # List of dependencies
-├── main.py                  # Main script to train and evaluate the CNN
-├── utils/                   # Helper functions
-│   ├── data_loader.py        # Data loading utilities
-│   └── model_utils.py        # Model utilities (e.g., save/load)
-├── models/                  # Neural network architectures
-│   └── cnn.py                # CNN model definition
-├── data/                    # Dataset directory (placeholder)
-│   └── sample_data.csv       # Example dataset file (if needed)
-└── outputs/                 # Directory for model outputs and logs
-    └── model.pth             # Saved model checkpoint
+├── main.py                  # Main chatbot application
+├── data.json                # Default data file 
+├── encryption.key           # Auto-generated encryption key for database
+├── receptionist_db.sqlite   # SQLite database file (auto-generated)
+│
+├── modules/                 # Core functionality modules
+│   ├── audio_processing.py   # Voice input handling
+│   ├── nlp_processing.py     # Natural language understanding
+│   ├── database.py           # Database operations
+│   └── report_generator.py   # PDF report generation
+│
+├── assets/                   # Supporting files
+│   └── style1colorlarge.png  # Logo for PDF reports
+│
+└── outputs/                 # Generated files directory
+    ├── appointment_*.txt     # Appointment details
+    └── report_*.pdf          # Generated PDF reports
 ```
 
 ---

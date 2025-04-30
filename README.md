@@ -60,23 +60,12 @@ IIS-Project/
 ├── data.json                # Default data file 
 ├── encryption.key           # Auto-generated encryption key for database
 ├── receptionist_db.sqlite   # SQLite database file (auto-generated)
-│
-├── modules/                 # Core functionality modules
-│   ├── audio_processing.py   # Voice input handling
-│   ├── nlp_processing.py     # Natural language understanding
-│   ├── database.py           # Database operations
-│   └── report_generator.py   # PDF report generation
-│
-├── assets/                   # Supporting files
-│   └── style1colorlarge.png  # Logo for PDF reports
-│
-└── outputs/                 # Generated files directory
-    ├── appointment_*.txt     # Appointment details
-    └── report_*.pdf          # Generated PDF reports
+├── style1colorlarge.png     # Logo for PDF reports
+├── WhatsAppAudio2025-04-17  # Sample Audio Recording saying "Appointment Management"
+| at03.00.58_7ec72598.waptt
+├── appointment_*.txt        # Appointment details
+├── report_*.pdf             # Generated PDF reports
 ```
 
 ---
-
-> **Note:** Make sure the `data/` folder contains your training images organized properly before running the script.
-
-Happy coding! 🚀
+> **Note:** Username: admin | Password: admin123 for initial database access
